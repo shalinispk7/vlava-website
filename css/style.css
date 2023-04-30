@@ -19,7 +19,7 @@
 	}
 	.serv-col{
 		width:100%;
-		padding:20px;
+		padding-bottom: 35px;
 		display:flex;
 	}
 	/* ABOUT SECTION */
@@ -102,6 +102,12 @@
 	margin: 70px 0;
     padding: 0 90px;
     }
+	.footer-head input{
+	padding:7px;
+	width: 100%;
+    outline:none;
+	border:none;
+}
 	
 }
 @media(min-width:620px){
@@ -121,7 +127,7 @@
 	
 	.serv-col{
 		width:33.3%;
-		padding:20px;
+		padding-bottom:35px;
 		display:flex;
 	}
 	/* ABOUT SECTION */
@@ -211,6 +217,12 @@
 	margin: 70px 0;
     padding: 0 90px;
     }
+	.footer-head input{
+	padding:7px;
+	width: 100%;
+    outline:none;
+	border:none;
+}
 	
 }
 @media(min-width:1000px){
@@ -230,7 +242,7 @@
 	}
 	.serv-col{
 		width:33.3%;
-		padding:20px;
+		padding-bottom: 35px;
 		display:flex;
 	}
 	/* ABOUT SECTION */
@@ -329,6 +341,12 @@
 	margin: 70px 0;
     padding: 0 90px;
     }
+	.footer-head input{
+	padding:7px;
+	width: 300px;
+    outline:none;
+	border:none;
+}
 
 }
 /* MEDIA QUERY ENDS */
@@ -492,12 +510,18 @@ header{
 .about-col .para{
 	padding-bottom: 15px;
     line-height: 22px;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
     color: #00695c;
 }
+.about-col .content{
+	    color: #443e3e;
+}
 .about-col .sty{
 	font-style:italic;
+}
+.about-col .rm-style{
+	padding:17px 0;
 }
 .about-col .rm-style li{
 	list-style-type: none;
@@ -522,6 +546,7 @@ header{
 	font-size: 35px;
 	font-weight:bold;
 	padding-bottom: 12px;
+	color: #052c3f;
 }
 .serv-head p{
 	color: #263238;
@@ -552,7 +577,7 @@ header{
     justify-content: center;
     align-items: center;
 	position: relative;
-    top: 15px;
+    top: 10px;
 	padding:30px;
 }
 .serv-icon i{
@@ -567,9 +592,12 @@ header{
 .serv-para h3{
 	font-size: 18px;
 	font-weight:bold;
+	padding-bottom:10px;
 }
 .serv-para p{
-	    font-size: 15px;
+	   font-size: 14px;
+    line-height: 25px;
+    color: gray;
 }
 /* SERVICE SECTION ENDS */
 /* TESTIMONIAL SECTION STARTS */
@@ -591,6 +619,7 @@ header{
 }
 .testimonial-col p{
 	 font-size: 16px;
+	 color: #6d6767;
 }
 .testimonial-col a{
 	display: inline-block;
@@ -653,7 +682,8 @@ header{
 	text-align:center;
 }
 .port-head h3{
-	font-size:30px;
+	font-size: 35px;
+    color: #052c3f;
 }
 .port-head p{
 	padding:25px;
@@ -718,7 +748,8 @@ header{
 	text-align:center;
 }
 .team-head h1{
-	font-size:30px;
+	font-size: 35px;
+    color: #052c3f;
 }
 .team-head p{
 	padding: 15px;
@@ -784,6 +815,8 @@ header{
 	font-weight: bold;
     font-size: 30px;
     letter-spacing: 1.1px;
+	font-size: 35px;
+    color: #052c3f;
  }
  .pricing-head p{
 	 padding: 25px;
@@ -817,6 +850,7 @@ header{
  }
  .dollar{
 	 font-size:22px;
+	 color: #5f9ea0;
  }
  
  .pricing-line{
@@ -825,6 +859,7 @@ header{
  }
  .pricing-cards span{
 	 font-size:35px;
+	 color: #5f9ea0;
  }
  .clr{
 	 background-color:#5f9ea021;
@@ -834,6 +869,8 @@ header{
 .que-head{
 	text-align:center;
 	padding-bottom: 50px;
+	font-size: 25px;
+    color: #052c3f;
 }
 .que-row{
 	display:flex;
@@ -867,6 +904,10 @@ header{
 	text-align:center;
 	padding:50px;
 }
+.map-head h2{
+	font-size: 35px;
+    color: #052c3f;
+}
 .map-head p{
 	padding-top:20px;
 }
@@ -885,6 +926,10 @@ header{
 }
 .contact-para{
 	    margin-left: 10px;
+}
+.contact-para p{
+	font-size: 14px;
+    color: #0d6e9e;
 }
 .contact-icon i{
 	font-size: 20px;
@@ -966,12 +1011,7 @@ text-decoration: none;
 .subscribe{
 	border:1px solid #ffffff5e;
 }
-.footer-head input{
-	padding:7px;
-	width: 300px;
-    outline:none;
-	border:none;
-}
+
 .social-icon{
 	margin: 25px 25px 60px;
     font-size: 23px;
