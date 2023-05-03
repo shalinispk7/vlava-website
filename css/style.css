@@ -7,7 +7,7 @@
 @media(min-width:320px){
 	/* NAV SECTION */
 	header.mob-nav{
-	display:block;
+		display:block;
 	}
 	header .menu{
 		display:none;
@@ -50,6 +50,10 @@
 	width:100%;
 	margin:auto;
    }
+    .port-row{
+	display:flex;
+	flex-wrap:wrap;
+   }
    .port-col{
 	width:100%;
 	}
@@ -62,7 +66,7 @@
 	width:100%;
 	padding:15px;
 	text-align:center;
-}
+   }
 	/* PRICING SECTION */
 	.container{
 	width:100%;
@@ -88,7 +92,7 @@
 	   }
 	.contact-col{
 		width:100%;
-		margin-left: 15%;
+		
 		display: flex;
 		padding-bottom: 15px;
 	}
@@ -113,20 +117,20 @@
 @media(min-width:620px){
 	/* NAV SECTION */
 	header .mob-nav{
-	display:block;
+		display:block;
 	}
 	header .menu{
 		display:none;
 	}
 	/* SERVICE SECTION */
 	.container{
-		width:100%;
+		width:90%;
 		margin:auto;
 	}
 	
 	
 	.serv-col{
-		width:33.3%;
+		width:50%;
 		padding-bottom:35px;
 		display:flex;
 	}
@@ -148,11 +152,11 @@
    }
    /* TESTIMONIAL SECTION */
 	.container{
-	width:100%;
+	width:90%;
 	margin:auto;
    }
 	.testimonial-col{
-	width:33.3%;
+	width:100%;
 	padding: 15px;
 	text-align:center;
    }
@@ -161,19 +165,23 @@
 	width:90%;
 	margin:auto;
    }
+   .port-row{
+	display:flex;
+	flex-wrap:wrap;
+   }
    .port-col{
-	width:33.3%;
+	width:50%;
 	}
 	/* TEAM SECTION */
 	.container{
-	width:100%;
+	width:90%;
 	margin:auto;
    }
    .team-col{
-	width:25%;
+	width:50%;
 	padding:15px;
 	text-align:center;
-}
+   }
 	/* PRICING SECTION */
 	.container{
 	width:100%;
@@ -182,24 +190,24 @@
 	.pricing-col{
 	 width:33.3%;
 	 text-align:center;
- }
+   }
  /* FREQUENTLY ASKED QUESTION */
 	.container{
-	width:100%;
+	width:90%;
 	margin:auto;
    }
    .que-col{
 	width:50%;
 	padding:15px;
-}
+   }
 	 /* CONTACT SECTION */
 	.container{
-		width:100%;
+		width:90%;
 		margin:auto;
 	   }
 	.contact-col{
 		width:100%;
-		margin-left: 15%;
+		
 		display: flex;
 		padding-bottom: 15px;
 	}
@@ -228,12 +236,12 @@
 @media(min-width:1000px){
 	/* NAV SECTION */
 	header .mob-nav{
-	display:none;
+		display:none;
 	}
 	header .menu{
-	display:flex;
-	justify-content:space-between;
-	align-items:center;
+		display:flex;
+		justify-content:space-between;
+		align-items:center;
     }
 	/* SERVICE SECTION */
 	.container{
@@ -279,6 +287,9 @@
    .port-col{
 	width:33.3%;
 	}
+	.port-col .card{
+	padding:0 20px 20px 0;
+   }
 	/* TEAM SECTION */
 	.container{
 	width:90%;
@@ -306,7 +317,7 @@
    .que-col{
 	width:50%;
 	padding:15px;
-}
+	}
 	 /* CONTACT SECTION */
 	.container{
 		width:90%;
@@ -322,11 +333,11 @@
 	.contact-sec{
 	margin: 70px 0;
     padding: 0 90px;
-}
-.contact-row{
+	}
+	.contact-row{
 	display:flex;
 	flex-wrap:wrap;
-}
+	}
 	/* MESSAGE SECTION */
 	.msg-row{
 		display:flex;
@@ -335,17 +346,17 @@
 		width:50%;
 	}
 	.col2{
-	padding-left:20px;
+		padding-left:20px;
 }
 	.message-sec{
-	margin: 70px 0;
-    padding: 0 90px;
+		margin: 70px 0;
+		padding: 0 90px;
     }
 	.footer-head input{
-	padding:7px;
-	width: 300px;
-    outline:none;
-	border:none;
+		padding:7px;
+		width: 300px;
+		outline:none;
+		border:none;
 }
 
 }
@@ -362,10 +373,7 @@
 	padding:0;
 	box-sizing:border-box;
 }
-.container{
-	width:90%;
-	margin: 0 auto;
-}
+
 header{
 	background: rgba(5, 44, 63, 0.8);
 	padding:25px;
@@ -554,9 +562,11 @@ header{
 }
 .serv-col:hover h3 {
 	color:#85b0be;
+	transition:all 0.3s ease;
 }
 .serv-col:hover .serv-icon {
 	background-color:#85b0be;
+	transition:all 0.3s ease;
 }
 .serv-col:hover .serv-icon i {
 	color:#fff;
@@ -579,6 +589,7 @@ header{
 	position: relative;
     top: 10px;
 	padding:30px;
+	cursor: pointer;
 }
 .serv-icon i{
 	color: #649aac;
@@ -708,37 +719,39 @@ header{
 	text-decoration:none;
 	color:black;
 }
-.port-row{
-	display:flex;
-	flex-wrap:wrap;
-}
 
 .port-col img{
 	width:100%;
 }
-.port-col .card{
-	padding:0 20px 20px 0;
-}
+
 .port-img{
 	position:relative;
 }
 .port-info{
 	left:0;
 	right:0;
-	bottom:0;
+	bottom:20px;
 	opacity:0;
 	position:absolute;
     background: rgba(255, 255, 255, 0.9);
 	display:flex;
 	justify-content: space-around;
+	transition:all 1s linear;
 }
 .card:hover .port-info{
 	opacity:1;
 	background-color:white;
 	margin: 5px 30px;
     padding: 10px 0px;
-	bottom:15px;
-	
+	bottom:10px;	
+}
+.port-icon{
+	color: #5f9ea0;
+	font-size:20px;
+}
+.port-para p{
+	color: #5f9ea0;
+	font-size:15px;
 }
 /* PORTFOLIO SECTION ENDS */
 
@@ -775,15 +788,15 @@ header{
 	bottom:20px;
 	text-align:center;
 	opacity:0;
-	
+	transition: all 1s ease;
 }
 .social a{
 	height:30px;
 	width:30px;
 	display:inline-block;
 	font-size: 20px;
-	    font-size: 20px;
-	color: #263238;
+	font-size: 20px;
+	color: #263238;	
 }
 
 .cards:hover .social{
@@ -914,13 +927,10 @@ header{
 /* CONTACT SECTION STARTS */
 
 .contact{
-	
 	box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
     padding: 30px;
     background: #fff;
 }
-
-
 .contact-para h3{
 	padding-bottom:10px;
 }
@@ -942,6 +952,7 @@ header{
     color: #85b0be;
     transition: all 0.3s ease-in-out;
     border-radius: 50px;
+	cursor: pointer;
 }
 .contact-icon i:hover{
 	border:1px solid white;
@@ -960,6 +971,8 @@ header{
 	display:block;
 	padding:7px;
 	height:40px;
+	border: 1px solid #00000029;
+    outline: none;
 }
 .input-box{
 	padding-bottom:30px;
