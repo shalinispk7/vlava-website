@@ -124,7 +124,7 @@
 	}
 	/* SERVICE SECTION */
 	.container{
-		width:90%;
+		width:100%;
 		margin:auto;
 	}
 	
@@ -136,7 +136,7 @@
 	}
 	/* ABOUT SECTION */
 	.container{
-	width:90%;
+	width:100%;
 	margin:auto;
    }
   .about-row{
@@ -152,7 +152,7 @@
    }
    /* TESTIMONIAL SECTION */
 	.container{
-	width:90%;
+	width:100%;
 	margin:auto;
    }
 	.testimonial-col{
@@ -162,7 +162,7 @@
    }
 	 /* PORTFOLIO SECTION */
 	.container{
-	width:90%;
+	width:100%;
 	margin:auto;
    }
    .port-row{
@@ -174,7 +174,7 @@
 	}
 	/* TEAM SECTION */
 	.container{
-	width:90%;
+	width:100%;
 	margin:auto;
    }
    .team-col{
@@ -193,7 +193,7 @@
    }
  /* FREQUENTLY ASKED QUESTION */
 	.container{
-	width:90%;
+	width:100%;
 	margin:auto;
    }
    .que-col{
@@ -202,7 +202,7 @@
    }
 	 /* CONTACT SECTION */
 	.container{
-		width:90%;
+		width:100%;
 		margin:auto;
 	   }
 	.contact-col{
