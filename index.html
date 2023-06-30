@@ -18,17 +18,14 @@
 			<div class="logo">
 				<h1><a href="#">VALVA</a></h1>
 			</div>
-			<div class="mob-nav">
-				<i class="bi bi-list"></i>
-			</div>
-			<ul class="menu">
-				<li><a class="active" href="#">Home</a></li>
-				<li><a href="#about">About</a></li>
-				<li><a href="#service">Service</a></li>
-				<li><a href="#portfolio">Portfolio</a></li>
-				<li><a href="#team">Team</a></li>
-				<li><a href="#pricing">Pricing</a></li>
-				<li class="drop-down"><a href="#">Dropdown <i class="bi bi-chevron-down"></i></a>
+			<ul class="menu nav-menu" id="navbarMenu">
+				<li class="nav-item"><a  href="#" class="active nav-link">Home</a></li>
+				<li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+				<li class="nav-item"><a href="#service" class="nav-link">Service</a></li>
+				<li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
+				<li class="nav-item"><a href="#team" class="nav-link">Team</a></li>
+				<li class="nav-item"><a href="#pricing" class="nav-link">Pricing</a></li>
+				<li class="drop-down nav-item"><a href="#" class="nav-link">Dropdown <i class="bi bi-chevron-down"></i></a>
 						<ul class="sub-menu">
 							<li><a href="#">Dropdown1</a></li>
 							<li class="dropdown2"><a href="#">Deep Dropdown <i class="bi bi-chevron-right"></i></a>
@@ -46,10 +43,14 @@
 						<li><a href="#">Dropdown4</a></li>
 					</ul>
 				</li>
-				<li><a href="#contact">Contact</a></li>
+				<li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
 			</ul>
 			
-		  
+			<div class="hamburger mob-nav">
+				<span class="bar"></span>
+				<span class="bar"></span>
+				<span class="bar"></span>
+			</div>
 		</nav>
 	</div>
 </header>
@@ -650,5 +651,8 @@
 		</div>
 	</div>
 </section>
+
+
+<script src="./main.js"></script>
 </body>
 </html>
